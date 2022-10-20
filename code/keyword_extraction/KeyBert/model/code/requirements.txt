@@ -1,0 +1,3 @@
+keybert
+flair
+sentence-transformers
