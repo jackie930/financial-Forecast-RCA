@@ -15,4 +15,4 @@ source--|--code--|--keyword extraction--|--KeyBert
 
 ## quick start
 
-follow the guidance in github pages
+follow the guidance in github pages https://jackie930.github.io/financial-Forecast-RCA/ 
