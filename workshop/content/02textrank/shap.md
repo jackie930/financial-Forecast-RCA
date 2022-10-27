@@ -1,10 +1,11 @@
++++
+title = "2.2 SHAP RCA"
+weight = 0220
++++
+
 ---
 SHAP 归因模型介绍
 ---
-**Authors**
-
-* JUNYI LIU (AWS GCR Sr. Applied Scientist)
-* KAIGE YANG (AWS GCR Applied Scientist)
 
 ## 概述
 SHAP 归因模型分析每一个输入变量对与模型输出的影响大小
@@ -29,3 +30,5 @@ SHAP 分析并计算 每个输入变量的对模型输出的影响大小 i.e., s
 ![](./shap_example.png)
 
 ## 动手实验
+
+https://github.com/jackie930/financial-Forecast-RCA/tree/main/code/textcls_rca/code 

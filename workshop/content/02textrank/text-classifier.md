@@ -1,10 +1,12 @@
++++
+title = "2.1 阅读行为分类模型介绍"
+weight = 0210
++++
+
 ---
 阅读行为分类模型介绍
 ---
-**Authors**
 
-* JUNYI LIU (AWS GCR Sr. Applied Scientist)
-* KAIGE YANG (AWS GCR Applied Scientist)
 
 ## 任务概述
 * 用户浏览投资相关内容（新闻，feed， 报告 等） 并产生入金行为
@@ -38,3 +40,5 @@
 
 
 ## 动手实验
+
+https://github.com/jackie930/financial-Forecast-RCA/tree/main/code/textcls_rca/code
