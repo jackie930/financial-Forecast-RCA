@@ -50,13 +50,17 @@ def do_train():
             get_path_from_url(val, args.model)
 
     ##todo: load from state dict if exist s3 path & not null
-    savedir_ckpt = '/opt/ml/checkpoints/'
-    files = os.listdir(savedir_ckpt)
-    if len(files)>0:
-        print ("<<<< load model from uie-base-en!!!")
-        model = UIE.from_pretrained(savedir_ckpt)
-        tokenizer = AutoTokenizer.from_pretrained(savedir_ckpt)
-    else:
+    try:
+        savedir_ckpt = '/opt/ml/checkpoints/'
+        files = os.listdir(savedir_ckpt)
+        if len(files)>0:
+            print ("<<<< load model from uie-base-en!!!")
+            model = UIE.from_pretrained(savedir_ckpt)
+            tokenizer = AutoTokenizer.from_pretrained(savedir_ckpt)
+        else:
+            model = UIE.from_pretrained(args.model)
+            tokenizer = AutoTokenizer.from_pretrained(args.model)
+    except:
         model = UIE.from_pretrained(args.model)
         tokenizer = AutoTokenizer.from_pretrained(args.model)
 
